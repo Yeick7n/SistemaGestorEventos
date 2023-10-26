@@ -16,22 +16,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/fondoe" />
+        app:srcCompat="@mipmap/fondoc" />
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="361dp"
-        android:layout_height="562dp"
+        android:layout_width="370dp"
+        android:layout_height="586dp"
         android:alpha="0.2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.497"
+        app:layout_constraintVertical_bias="0.496"
         app:srcCompat="@drawable/bordo" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/eTpass"
         android:layout_width="265dp"
         android:layout_height="44dp"
         android:alpha="0.6"
@@ -44,13 +45,14 @@
         android:textColorHint="#000000"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
         app:layout_constraintTop_toTopOf="@+id/imageView4"
-        app:layout_constraintVertical_bias="0.537" />
+        app:layout_constraintVertical_bias="0.528" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/usuario"
         android:layout_width="265dp"
         android:layout_height="44dp"
         android:layout_marginStart="60dp"
@@ -63,15 +65,15 @@
         android:textColor="#000000"
         android:textColorHint="#000000"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
+        app:layout_constraintBottom_toTopOf="@+id/eTpass"
+        app:layout_constraintEnd_toEndOf="@+id/eTpass"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
+        app:layout_constraintStart_toStartOf="@+id/eTpass"
         app:layout_constraintTop_toTopOf="@+id/imageView4"
-        app:layout_constraintVertical_bias="0.971" />
+        app:layout_constraintVertical_bias="0.96" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btninicio"
         android:layout_width="259dp"
         android:layout_height="57dp"
         android:backgroundTint="#000000"
@@ -80,10 +82,9 @@
         android:textColorLink="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="@+id/imageView4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
-        app:layout_constraintVertical_bias="0.164" />
+        app:layout_constraintTop_toBottomOf="@+id/eTpass"
+        app:layout_constraintVertical_bias="0.283" />
 
     <TextView
         android:id="@+id/textView"
@@ -94,11 +95,69 @@
         android:textColor="#FFFFFF"
         android:textSize="28sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/editTextText"
-        app:layout_constraintEnd_toEndOf="@+id/editTextText"
-        app:layout_constraintHorizontal_bias="0.491"
-        app:layout_constraintStart_toStartOf="@+id/editTextText"
+        app:layout_constraintBottom_toTopOf="@+id/usuario"
+        app:layout_constraintEnd_toEndOf="@+id/usuario"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="@+id/usuario"
         app:layout_constraintTop_toTopOf="@+id/imageView4"
-        app:layout_constraintVertical_bias="0.346" />
+        app:layout_constraintVertical_bias="0.267" />
+
+    <EditText
+        android:id="@+id/RecuperarC"
+        android:layout_width="199dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:gravity="bottom|center"
+        android:inputType="text"
+        android:text="¿Recuperar contraseña?"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="@+id/btninicio"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="@+id/btninicio"
+        app:layout_constraintTop_toBottomOf="@+id/btninicio"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/Registar"
+        android:layout_width="198dp"
+        android:layout_height="33dp"
+        android:ems="10"
+        android:gravity="bottom|center"
+        android:inputType="text"
+        android:text="¿No tienes cuenta? Registrate"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="@+id/btninicio"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="@+id/btninicio"
+        app:layout_constraintTop_toBottomOf="@+id/RecuperarC"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="152dp"
+        android:layout_height="26dp"
+        android:text="Recordarme"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/btninicio"
+        app:layout_constraintEnd_toEndOf="@+id/eTpass"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/eTpass"
+        app:layout_constraintTop_toBottomOf="@+id/eTpass"
+        app:layout_constraintVertical_bias="0.526" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="126dp"
+        android:layout_height="136dp"
+        android:alpha="0.9"
+        app:layout_constraintBottom_toTopOf="@+id/usuario"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@mipmap/usera" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
