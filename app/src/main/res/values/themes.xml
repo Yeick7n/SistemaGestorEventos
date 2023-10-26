@@ -6,4 +6,13 @@
     </style>
 
     <style name="Theme.SistemaGestorEventos" parent="Base.Theme.SistemaGestorEventos" />
+
+    <style name="Theme.SistemaGestorEventos.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.SistemaGestorEventos.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.SistemaGestorEventos.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single"
+        tools:ignore="ExtraText">
+        <item
+            android:id="@+id/nav_horario"
+            android:icon="@drawable/horario"
+            android:title="Horario" />
+        <item
+            android:id="@+id/nav_evento"
+            android:icon="@drawable/evento"
+            android:title="Eventos" />
+        <item
+            android:id="@+id/nav_ambiente"
+            android:icon="@drawable/ambientes2"
+            android:title="Ambiente" />
+        <item
+            android:id="@+id/nav_progreso"
+            android:icon="@drawable/progreso"
+            android:title="Progreso" />
+        <item
+            android:id="@+id/nav_perfil"
+            android:icon="@drawable/perfil"
+            android:title="Perfil" />
+        <item
+            android:id="@+id/nav_salir"
+            android:icon="@drawable/salir"
+            android:title="Cerrar sesión" />
+    </group>
+</menu>
