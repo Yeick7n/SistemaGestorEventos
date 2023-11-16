@@ -6,17 +6,76 @@
     android:layout_height="match_parent"
     tools:context=".ui.slideshow.SlideshowFragment">
 
-    <TextView
-        android:id="@+id/text_slideshow"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
+    <EditText
+        android:id="@+id/usuario3"
+        android:layout_width="138dp"
+        android:layout_height="34dp"
+        android:alpha="0.6"
+        android:background="@drawable/ambientetext"
+        android:ems="10"
+        android:hint="Ambiente"
+        android:inputType="text"
+        android:paddingLeft="10"
         android:textAlignment="center"
-        android:textSize="20sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toEndOf="@+id/usuario2"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.015" />
+
+    <EditText
+        android:id="@+id/usuario2"
+        android:layout_width="243dp"
+        android:layout_height="34dp"
+        android:alpha="0.6"
+        android:background="@drawable/ambientetext"
+        android:ems="10"
+        android:hint="Sede"
+        android:inputType="text"
+        android:paddingLeft="10"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.032"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.015" />
+
+    <EditText
+        android:id="@+id/textView"
+        android:layout_width="390dp"
+        android:layout_height="38dp"
+        android:background="@drawable/ambientetext"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="text"
+        android:paddingLeft="10"
+        android:text="Monteria CCT"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <com.applandeo.materialcalendarview.CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="412dp"
+        android:layout_height="490dp"
+        app:headerColor="#48EC0C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7"
+        app:todayLabelColor="#67F303" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
